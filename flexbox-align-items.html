@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flex box Align Items</title>
+    <style>
+      .container2 {
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        background-color: dodgerblue;
+      }
+
+      .row div {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        background-color: #f1f1f1;
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        background-color: dodgerblue;
+      }
+
+      .column div {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        background-color: #f1f1f1;
+      }
+
+      .align-items-center {
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Align Items</h1>
+      <h2>Row (without align Items)</h2>
+      <div class="row">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
+      <h2>Column (without align Items)</h2>
+      <div class="column">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
+      <h2>Column (with align Items set to center)</h2>
+      <div class="column align-items-center">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+      </div>
+    </div>
+  </body>
+</html>
