@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Align Content</title>
+    <style>
+      .container {
+      }
+      .row-container {
+        display: flex;
+        height: 300px;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: dodgerblue;
+      }
+      .align-content-center {
+        align-content: center;
+      }
+      .align-content-space-around {
+        align-content: space-around;
+      }
+      .row-container div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .true-center {
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>No Align content</h3>
+      <div class="row-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+        <div>Item 12</div>
+        <div>Item 13</div>
+        <div>Item 14</div>
+        <div>Item 15</div>
+        <div>Item 16</div>
+        <div>Item 17</div>
+        <div>Item 18</div>
+      </div>
+      <h3>Align content : center</h3>
+      <div class="row-container align-content-center">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+        <div>Item 12</div>
+        <div>Item 13</div>
+        <div>Item 14</div>
+        <div>Item 15</div>
+        <div>Item 16</div>
+        <div>Item 17</div>
+        <div>Item 18</div>
+      </div>
+      <h3>Align content : space around</h3>
+      <div class="row-container align-content-space-around">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+        <div>Item 12</div>
+        <div>Item 13</div>
+        <div>Item 14</div>
+        <div>Item 15</div>
+        <div>Item 16</div>
+        <div>Item 17</div>
+        <div>Item 18</div>
+      </div>
+      <h3>True Center</h3>
+      <div class="row-container true-center">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+        <div>Item 12</div>
+        <div>Item 13</div>
+        <div>Item 14</div>
+        <div>Item 15</div>
+        <div>Item 16</div>
+        <div>Item 17</div>
+        <div>Item 18</div>
+      </div>
+    </div>
+  </body>
+</html>
