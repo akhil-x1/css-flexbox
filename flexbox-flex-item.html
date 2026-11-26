@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flex items</title>
+    <style>
+      .container {
+      }
+
+      .container-row {
+        display: flex;
+        /* flex-direction: row; */
+        background-color: dodgerblue;
+      }
+
+      .container-row div {
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      .height-100px {
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Flex Order</h3>
+      <div class="container-row">
+        <div style="order: 2">Item 1</div>
+        <div style="order: 5">Item 2</div>
+        <div style="order: 1">Item 3</div>
+        <div style="order: 3">Item 4</div>
+        <div style="order: 4">Item 5</div>
+      </div>
+      <h3>Flex Grow</h3>
+      <div class="container-row">
+        <div style="flex-grow: 1">Item 1 (1 part)</div>
+        <div style="flex-grow: 2">Item 2 (2 parts)</div>
+        <div style="flex-grow: 1">Item 3 (1 part)</div>
+      </div>
+      <h3>Flex Shrink & Flex Basis</h3>
+      <h4>(Flex basis 300px for each item)</h4>
+      <div class="container-row">
+        <div style="flex-basis: 300px">Item 1</div>
+        <div style="flex-shrink: 2; flex-basis: 300px">Item 2</div>
+        <div style="flex-basis: 300px">Item 3</div>
+        <div style="flex-basis: 300px">Item 4</div>
+        <div style="flex-basis: 300px">Item 5</div>
+      </div>
+      <h3>Flex property</h3>
+      <div class="container-row">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div style="flex: 1 0 300px">Item 3</div>
+        <div>Item 3</div>
+      </div>
+      <h3>Align Self : center</h3>
+      <div class="container-row height-100px">
+        <div>Item 1</div>
+        <div style="align-self: center">Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+      </div>
+      <h3>Align Self : flex start</h3>
+      <div class="container-row height-100px">
+        <div>Item 1</div>
+        <div style="align-self: flex-start">Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+      </div>
+      <h3>Align Self : flex end</h3>
+      <div class="container-row height-100px">
+        <div>Item 1</div>
+        <div style="align-self: flex-end">Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+      </div>
+    </div>
+  </body>
+</html>
