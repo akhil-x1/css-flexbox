@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flexbox responsive</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: dodgerblue;
+        flex-direction: row;
+      }
+      .container div {
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+  </body>
+</html>
